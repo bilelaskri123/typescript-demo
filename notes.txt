@@ -1,0 +1,15 @@
+javascript types:
+- string
+- number
+- object
+- boolean
+- null
+- undefined
+
+typescript added these types:
+- any
+- unknown
+- never
+- enum
+- tuple
+
