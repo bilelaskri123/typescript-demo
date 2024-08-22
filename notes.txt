@@ -13,3 +13,6 @@ typescript added these types:
 - enum
 - tuple
 
+readonly variable, you can not change its value after assign it
+
+Access modifiers: private, protected, public(default)

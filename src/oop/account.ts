@@ -1,12 +1,7 @@
 class Account {
   static defaultId: number = 0;
-  readonly id: number = 0; // readonly variable, you can not change its value after assign it
-  // owner: string = "";
-  // private _balance: number = 0;
+  readonly id: number = 0;
   username?: string; // optional
-
-  // Access modifiers
-  // private, protected, public(default)
 
   //   constructor(owner: string, balance: number) {
   //     Account.defaultId = Account.defaultId + 1;
@@ -31,12 +26,26 @@ class Account {
   getBalance() {
     return this._balance;
   }
+
+  // getter
+
+  public get balance(): number {
+    return this._balance;
+  }
+
+  //   public set balance(v: number) {
+  //     if (v < 0) {
+  //       throw new Error("balance should be greater than 0");
+  //     }
+  //     this._balance = v;
+  //   }
+
+  static get members(): number {
+    return Account.defaultId;
+  }
 }
 
 let bilelAccount = new Account("bilel", 10);
 let radhouenAccount = new Account("radhouen", 55);
 bilelAccount.deposit(10);
-console.log(bilelAccount);
-console.log(radhouenAccount);
-
-console.log(bilelAccount.getBalance());
+console.log(Account.members);
