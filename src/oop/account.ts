@@ -28,7 +28,6 @@ class Account {
   }
 
   // getter
-
   public get balance(): number {
     return this._balance;
   }
