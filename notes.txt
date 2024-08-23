@@ -15,4 +15,20 @@ typescript added these types:
 
 readonly variable, you can not change its value after assign it
 
-Access modifiers: private, protected, public(default)
+Access modifiers: 
+private: available within the class.
+protected: available within the class & sub classes.
+public(default): available everywhere.
+
+polymorphism: 
+- subtype polymorphism (method overriding)
+    + it allows objects of different classes to be treated as objects of a common superclass
+
+- Ad hoc polymorphism (function overloading)
+    + TypeScript allows method overloading, where multiple methods can have the same name but different parameter types or numbers.
+      However, TypeScript does not support true method overloading like other languages (e.g., C# or Java).
+      Instead, you define overload signatures in TypeScript, and one implementation handles the different cases.
+
+- Polymorphism with interfaces:
+    + Polymorphism can also be achieved using interfaces. You can define an interface and have multiple classes implement it,
+    each with its own specific behavior for the interface's methods.

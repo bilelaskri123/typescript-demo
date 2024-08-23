@@ -9,4 +9,15 @@ export class Person {
   walk(): void {
     console.log("walking");
   }
+
+  add(a: number, b: number): number;
+  add(firstName: string, lastName: string): string;
+
+  add(a: any, b: any): any {
+    return a + b;
+  }
+
+  protected drinkCoffee() {
+    console.log("drink coffee");
+  }
 }
