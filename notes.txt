@@ -32,3 +32,5 @@ polymorphism:
 - Polymorphism with interfaces:
     + Polymorphism can also be achieved using interfaces. You can define an interface and have multiple classes implement it,
     each with its own specific behavior for the interface's methods.
+
+- Abstract class & method
