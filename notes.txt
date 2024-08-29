@@ -34,4 +34,5 @@ polymorphism:
     each with its own specific behavior for the interface's methods.
 
 - Abstract class & method
-- interface 
+- interface
+- Encapsulation

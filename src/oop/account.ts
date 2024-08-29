@@ -23,6 +23,15 @@ class Account {
     this._balance += amount;
   }
 
+  withdraw(amount: number): number {
+    if (this._balance < amount) {
+      throw new Error("You don't have enough money");
+    }
+
+    this._balance = this._balance - amount;
+    return amount;
+  }
+
   getBalance() {
     return this._balance;
   }
