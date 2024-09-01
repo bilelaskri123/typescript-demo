@@ -36,3 +36,5 @@ polymorphism:
 - Abstract class & method
 - interface
 - Encapsulation
+- keyof operator
+- type mapping
