@@ -38,3 +38,16 @@ polymorphism:
 - Encapsulation
 - keyof operator
 - type mapping
+
+- utility types
+- export & import
+- debugger tool in vscode
+- class decorator
+- decorator factory
+- decorator composition
+- method decorator
+- accessor decorator
+- property decorator
+- parameter decorator
+- React with typescript
+- Setup express with typescript
