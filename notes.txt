@@ -53,3 +53,10 @@ polymorphism:
 - Setup express with typescript
 - export & import ( you can use also wildcard * to import all exports / use default to export a single thing from file)
 - debugger tool in vscode
+
+decorators:
+    - class decorators
+    - method decorators
+    - Accessor decorators
+    - property decorators
+    - parameter decorators
