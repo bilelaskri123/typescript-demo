@@ -19,6 +19,7 @@ function Guard(role: string) {
 @Controllers("/api/books")
 class Book2 {}
 
+// decorator composition
 @Guard("admin")
 @Controllers("/api/users")
 class Users {}
