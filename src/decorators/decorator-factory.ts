@@ -9,8 +9,16 @@ function Controllers(endPoint: string) {
   };
 }
 
+function Guard(role: string) {
+  return (constructor: Function) => {
+    console.log("Guard Decorator called");
+    constructor.prototype.role = role;
+  };
+}
+
 @Controllers("/api/books")
 class Book2 {}
 
+@Guard("admin")
 @Controllers("/api/users")
 class Users {}
