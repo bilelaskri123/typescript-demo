@@ -1,10 +1,10 @@
 function ToUpperCase(
   classPrototype: Object,
   methodName: string,
-  description: PropertyDescriptor
+  descriptor: PropertyDescriptor
 ) {
-  const originalValue = description.get;
-  description.get = function () {
+  const originalValue = descriptor.get;
+  descriptor.get = function () {
     const result = originalValue?.call(this);
     return result.toUpperCase();
   };
